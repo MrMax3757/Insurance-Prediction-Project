@@ -2,7 +2,6 @@
 
 A machine learning web application that predicts annual medical insurance costs based on personal health information. Built with Python, scikit-learn, and Streamlit.
 
-
 ## 🎯 Project Overview
 
 This project is the **capstone** of a 7‑day machine learning course. It demonstrates an end‑to‑end ML workflow:
@@ -10,9 +9,9 @@ This project is the **capstone** of a 7‑day machine learning course. It demons
 - **Data collection** – real‑world insurance dataset (Kaggle)
 - **Exploratory Data Analysis** – visualisations with Matplotlib & Seaborn
 - **Preprocessing** – encoding categorical variables, train‑test split
-- **Model training** – Linear Regression, Logistic Regression, Random Forest
-- **Model evaluation** – RMSE, R², confusion matrix, precision/recall
-- **Deployment** – interactive web app using Streamlit
+- **Model training** – Linear Regression and Random Forest Regressor
+- **Model evaluation** – RMSE, R², feature importance
+- **Deployment** – interactive web app using Streamlit with prediction history
 
 The best model (Random Forest Regressor) achieves **R² ≈ 0.85** and **RMSE ≈ $5,000** on test data.
 
@@ -33,11 +32,17 @@ The best model (Random Forest Regressor) achieves **R² ≈ 0.85** and **RMSE �
 
 ## 🧠 Model Performance
 
-| Model | R² | RMSE | Accuracy (classification) |
-|-------|----|----|---------------------------|
-| Linear Regression | 0.78 | $5,796 | – |
-| Logistic Regression (high/low cost) | – | – | 91% |
-| **Random Forest Regressor (final)** | **0.85** | **$5,000** | – |
+| Model | R² | RMSE |
+|-------|----|------|
+| Linear Regression | 0.78 | $5,796 |
+| **Random Forest Regressor (final)** | **0.85** | **$5,000** |
 
 **Key insight:** Smoking is the most important feature, followed by BMI and age.
 
+## 🚀 How to Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/MrMax3757/Insurance-Prediction-Project.git
+cd Insurance-Prediction-Project
